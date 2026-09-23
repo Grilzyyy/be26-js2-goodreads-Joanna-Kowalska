@@ -1,0 +1,33 @@
+{
+  "books": {
+    "book1": {
+      "title": "Harry Potter",
+      "author": "J.K. Rowling",
+      "category": "Fantasy",
+      "description": "A young wizard begins his journey at Hogwarts.",
+      "image": "",
+      "isRead": true,
+      "score": 5,
+      "comment": "Great book!"
+    },
+    "book2": {
+      "title": "Dune",
+      "author": "Frank Herbert",
+      "category": "Science Fiction",
+      "description": "A story about survival, politics and life on Arrakis.",
+      "image": "",
+      "isRead": false,
+      "comment": ""
+    },
+    "book3": {
+      "title": "The Hobbit",
+      "author": "J.R.R. Tolkien",
+      "category": "Fantasy",
+      "description": "Bilbo Baggins goes on an unexpected adventure.",
+      "image": "",
+      "isRead": true,
+      "score": 4,
+      "comment": "Really fun adventure."
+    }
+  }
+}

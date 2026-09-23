@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Little E-bookshelf</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Background -->
+    <img
+        class="background-image"
+        src="public/assets/Book.png"
+        alt=""
+    >
+
+    <div class="background-overlay"></div>
+
+
+    <!-- APP -->
+    <div class="app">
+
+        <!-- HEADER -->
+        <header class="site-header">
+
+            <h1>Little E-bookshelf</h1>
+
+            <button
+                id="add-book-button"
+                class="add-button"
+            >
+                + Add Book
+            </button>
+
+        </header>
+
+
+        <!-- MAIN -->
+        <main>
+
+            <!-- SEARCH -->
+            <section class="search-section">
+
+                <input
+                    id="search-input"
+                    type="text"
+                    placeholder="Search for a book or author..."
+                    autocomplete="off"
+                >
+
+                <div class="filter-row">
+
+                    <select id="category-filter">
+                        <option value="all">
+                            All categories
+                        </option>
+                    </select>
+
+                    <button id="show-all-button">
+                        Show All Books
+                    </button>
+
+                </div>
+
+            </section>
+
+
+            <!-- BOOKS -->
+            <section class="books-section">
+
+                <h2>My Books</h2>
+
+                <div
+                    id="books-container"
+                    class="books-grid"
+                ></div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <!-- BOOK DETAILS MODAL -->
+    <div
+        id="details-modal"
+        class="modal hidden"
+    >
+
+        <div class="modal-content">
+
+            <button
+                id="close-details"
+                class="close-button"
+                aria-label="Close"
+            >
+                ×
+            </button>
+
+            <div id="details-content"></div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ADD BOOK MODAL -->
+    <div
+        id="add-modal"
+        class="modal hidden"
+    >
+
+        <div class="modal-content form-modal">
+
+            <button
+                id="close-add"
+                class="close-button"
+                aria-label="Close"
+            >
+                ×
+            </button>
+
+            <h2>Add a new book</h2>
+
+            <form id="add-book-form">
+
+                <label for="book-title">
+                    Title
+                </label>
+
+                <input
+                    id="book-title"
+                    type="text"
+                    required
+                >
+
+
+                <label for="book-author">
+                    Author
+                </label>
+
+                <input
+                    id="book-author"
+                    type="text"
+                    required
+                >
+
+
+                <label for="book-category">
+                    Category
+                </label>
+
+                <input
+                    id="book-category"
+                    type="text"
+                    placeholder="Fantasy, Romance, Horror..."
+                >
+
+
+                <label for="book-description">
+                    Description
+                </label>
+
+                <textarea
+                    id="book-description"
+                    rows="5"
+                    placeholder="Write a short description..."
+                ></textarea>
+
+
+                <label for="book-image">
+                    Book cover image URL
+                </label>
+
+                <input
+                    id="book-image"
+                    type="url"
+                    placeholder="https://..."
+                >
+
+
+                <button
+                    type="submit"
+                    class="submit-button"
+                >
+                    Add Book
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <script
+        type="module"
+        src="/src/main.js"
+    ></script>
+
+</body>
+</html>
