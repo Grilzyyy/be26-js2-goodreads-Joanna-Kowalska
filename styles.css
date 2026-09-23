@@ -18,11 +18,6 @@ body {
     overflow-x: hidden;
 }
 
-
-/* =========================================
-   BACKGROUND
-========================================= */
-
 .background-image {
     position: fixed;
 
@@ -54,10 +49,6 @@ body {
 }
 
 
-/* =========================================
-   APP
-========================================= */
-
 .app {
     min-height: 100vh;
 
@@ -66,10 +57,6 @@ body {
     z-index: 1;
 }
 
-
-/* =========================================
-   HEADER
-========================================= */
 
 .site-header {
     position: relative;
@@ -102,7 +89,6 @@ body {
 }
 
 
-/* ADD BUTTON */
 
 .add-button {
     position: absolute;
@@ -138,10 +124,6 @@ body {
 }
 
 
-/* =========================================
-   MAIN
-========================================= */
-
 main {
     width: min(1200px, 92%);
 
@@ -151,9 +133,6 @@ main {
 }
 
 
-/* =========================================
-   SEARCH
-========================================= */
 
 .search-section {
     width: min(650px, 100%);
@@ -203,8 +182,6 @@ main {
 }
 
 
-/* FILTERS */
-
 .filter-row {
     display: flex;
 
@@ -250,10 +227,6 @@ main {
 }
 
 
-/* =========================================
-   BOOK SECTION
-========================================= */
-
 .books-section h2 {
     width: fit-content;
 
@@ -273,10 +246,6 @@ main {
         0 5px 15px rgba(0, 0, 0, 0.25);
 }
 
-
-/* =========================================
-   BOOK GRID
-========================================= */
 
 .books-grid {
     display: grid;
@@ -386,10 +355,6 @@ main {
 }
 
 
-/* =========================================
-   MODALS
-========================================= */
-
 .modal {
     position: fixed;
 
@@ -436,8 +401,6 @@ main {
 }
 
 
-/* CLOSE BUTTON */
-
 .close-button {
     position: absolute;
 
@@ -455,10 +418,6 @@ main {
     cursor: pointer;
 }
 
-
-/* =========================================
-   DETAILS
-========================================= */
 
 .details-layout {
     display: grid;
@@ -502,10 +461,6 @@ main {
 }
 
 
-/* =========================================
-   READ BUTTON
-========================================= */
-
 .read-button {
     margin-top: 18px;
 
@@ -534,10 +489,6 @@ main {
     transform: translateY(-2px);
 }
 
-
-/* =========================================
-   RATING
-========================================= */
 
 .rating {
     margin-top: 25px;
@@ -581,10 +532,6 @@ main {
     cursor: not-allowed;
 }
 
-
-/* =========================================
-   COMMENTS
-========================================= */
 
 .comment-section {
     margin-top: 25px;
@@ -652,9 +599,6 @@ main {
 }
 
 
-/* =========================================
-   ADD FORM
-========================================= */
 
 .form-modal h2 {
     margin-bottom: 25px;
@@ -731,10 +675,6 @@ main {
 }
 
 
-/* =========================================
-   RESPONSIVE
-========================================= */
-
 @media (max-width: 700px) {
 
     /* HEADER */
@@ -755,14 +695,12 @@ main {
     }
 
 
-    /* MAIN */
     main {
         width: 94%;
         padding: 40px 0 60px;
     }
 
 
-    /* SEARCH */
     .search-section {
         margin-top: 20px;
         margin-bottom: 45px;
@@ -774,7 +712,6 @@ main {
     }
 
 
-    /* FILTERS */
     .filter-row {
         width: 100%;
         flex-direction: column;
@@ -785,8 +722,6 @@ main {
         width: 100%;
     }
 
-
-    /* BOOK CARDS */
     .books-grid {
         grid-template-columns: 1fr;
         gap: 20px;
@@ -797,7 +732,6 @@ main {
     }
 
 
-    /* DETAILS */
     .details-layout {
         grid-template-columns: 1fr;
         gap: 20px;
@@ -812,7 +746,6 @@ main {
     }
 
 
-    /* MODALS */
     .modal {
         padding: 10px;
     }
@@ -823,7 +756,6 @@ main {
     }
 
 
-    /* STARS */
     .star {
         font-size: 32px;
     }
