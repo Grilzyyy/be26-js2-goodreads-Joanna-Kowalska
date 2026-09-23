@@ -8,18 +8,12 @@ import {
 } from "./firebase.js";
 
 
-/* =========================================
-   STATE
-========================================= */
 
 let books = [];
 
 let currentBook = null;
 
 
-/* =========================================
-   ELEMENTS
-========================================= */
 
 const booksContainer =
     document.querySelector("#books-container");
@@ -52,9 +46,6 @@ const addBookForm =
     document.querySelector("#add-book-form");
 
 
-/* =========================================
-   LOAD
-========================================= */
 
 async function loadBooks() {
 
@@ -104,10 +95,6 @@ async function loadBooks() {
     }
 }
 
-
-/* =========================================
-   RENDER BOOKS
-========================================= */
 
 function renderBooks() {
 
@@ -235,9 +222,6 @@ function renderBooks() {
 }
 
 
-/* =========================================
-   CATEGORIES
-========================================= */
 
 function updateCategories() {
 
@@ -279,9 +263,6 @@ function updateCategories() {
 }
 
 
-/* =========================================
-   BOOK DETAILS
-========================================= */
 
 function openDetails(id) {
 
@@ -518,9 +499,6 @@ function renderDetails() {
 }
 
 
-/* =========================================
-   READ / UNREAD
-========================================= */
 
 async function toggleRead() {
 
@@ -575,9 +553,6 @@ async function toggleRead() {
 }
 
 
-/* =========================================
-   RATING
-========================================= */
 
 async function rateBook(score) {
 
@@ -617,9 +592,6 @@ async function rateBook(score) {
 }
 
 
-/* =========================================
-   COMMENT
-========================================= */
 
 async function saveComment() {
 
@@ -663,9 +635,6 @@ async function saveComment() {
 }
 
 
-/* =========================================
-   DELETE
-========================================= */
 
 async function removeBook() {
 
@@ -721,7 +690,6 @@ async function removeBook() {
     }
 }
 
-// VISA HÄR : ADD BOOK
 
 addBookForm.addEventListener(
     "submit",
